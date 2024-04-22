@@ -1,0 +1,17 @@
+@media(max-width:730px){
+    .pizza-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    div h2.delicias{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 760px){
+    .grid .contenido-principal{
+        grid-column: 1/-1;
+    }
+    .sidebar{
+        grid-column: 1/-1;
+    }
+}

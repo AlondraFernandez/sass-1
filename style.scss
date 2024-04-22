@@ -1,0 +1,158 @@
+@import "./utilities/_variables.scss";
+@import "./utilities/_mixins.scss";
+@import "./scss/base/reset";
+@import "./scss/base/layout/header.scss";
+@import "./scss/base/layout/footer.scss";
+@import "./scss/base/layout/mainemp.scss";
+@import "./scss/base/layout/mainnosotros.scss";
+@import "./scss/base/layout/mainpizzas.scss";
+@import "./scss/base/layout/media730";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+body {
+    font-family: 'Poppins' , sans-serif;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu label{
+        cursor: pointer;
+        display: none;
+    }
+}
+.menu-container1{
+    display: flex;
+    max-width: 1200px;
+    margin-right: 0px;
+}
+.navbar{
+    font-size: 18px;
+    padding: 20px;
+    background-color: yellow;
+    display: block;
+    font-weight: 600;
+    .navbar-brand{
+        text-align: left;
+    }
+}
+#menu{
+    display: none;
+}
+
+.header-content p{
+    font-size: 16px;
+    color: yellow;
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: $secondary-color;
+    color: black;
+    text-transform: uppercase;
+}
+.btn-1:hover{
+    color: red;
+}
+.pizza{
+    padding: 100px 0;
+    background-color: aliceblue;
+    position: relative;
+    .pizza-content{
+        text-align: center;
+    }
+}
+.pizza-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.pizza-content h2{
+    font-size: 55px;
+    color:black;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+.pizza-1 img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    .pizza-img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+    }
+}
+.img-header{
+    background-color: rgb(222, 220, 222);
+}
+h3{
+    color:black;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.servicios{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)),
+        url(../assets/img/fondo-header.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+}
+.servicio-content{
+    text-align: center;
+    .servicio-content h2{
+        font-size: 55px;
+        line-height: 70px;
+        color: yellow;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .servicio-1{
+        padding: 0 100px;
+    
+    }
+    .servicio-1 img{
+        width: 25px;
+        margin-bottom: 15px;
+    }
+    .servicio-1 h3{
+        color: aliceblue;
+        font-size: 18px;
+    }
+}
+.cards{
+    width: 30%;
+    height: 450px;
+    background-color: orange;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    .card__btn{
+    color: black;
+    background-color: aliceblue;
+    text-decoration: none;
+    padding: 10px 30px;
+    width: 10%;
+    display: block;
+    text-transform: capitalize;
+}
+}
+h2{
+    color: white;
+}
+.card__btn:hover{
+    color: yellow;
+}
+.titulo{
+    color: $secondary-color;
+}

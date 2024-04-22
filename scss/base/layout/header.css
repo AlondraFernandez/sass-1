@@ -1,0 +1,59 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-container1 {
+  display: flex;
+  max-width: 1200px;
+  margin-right: 0px;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  font-size: 18px;
+  padding: 20px;
+  background-color: yellow;
+  display: block;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  text-align: left;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: yellow;
+  padding: 0 25px;
+  margin-bottom: 25px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: yellow;
+  color: black;
+  text-transform: uppercase;
+}/*# sourceMappingURL=header.css.map */

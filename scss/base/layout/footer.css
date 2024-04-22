@@ -1,0 +1,22 @@
+.footer-1 {
+  background-color: black;
+}
+
+.copyright {
+  color: gray;
+}
+
+footer h3 {
+  color: gray;
+}
+
+footer a {
+  color: rgb(255, 247, 5);
+  list-style: none;
+  text-decoration: none;
+}
+
+footer img {
+  height: 40px;
+  width: 40px;
+}/*# sourceMappingURL=footer.css.map */
