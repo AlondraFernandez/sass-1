@@ -102,22 +102,16 @@ h3{
     background-image: linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)),
-        url(../assets/img/fondo-header.jpg);
+        url(/assets/img/fondo-header.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         padding: 100px 0;
-}
+    }
+
 .servicio-content{
     text-align: center;
-    .servicio-content h2{
-        font-size: 55px;
-        line-height: 70px;
-        color: yellow;
-        text-transform: uppercase;
-        margin-bottom: 50px;
-    }
     .servicio-1{
         padding: 0 100px;
     
@@ -130,6 +124,13 @@ h3{
         color: aliceblue;
         font-size: 18px;
     }
+}
+.servicio-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: yellow;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 .cards{
     width: 30%;

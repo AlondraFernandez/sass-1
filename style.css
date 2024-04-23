@@ -288,9 +288,20 @@ h2 {
 @media screen and (max-width: 760px) {
   .grid .contenido-principal {
     grid-column: 1/-1;
+    width: 270px;
   }
   .sidebar {
     grid-column: 1/-1;
+    width: 276px;
+  }
+  .medida {
+    width: 220px;
+  }
+}
+@media (max-width: 850px) {
+  .grid {
+    flex-direction: column;
+    justify-content: center;
   }
 }
 body {
@@ -397,7 +408,7 @@ h3 {
 }
 
 .servicios {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/fondo-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img/fondo-header.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -407,13 +418,6 @@ h3 {
 
 .servicio-content {
   text-align: center;
-}
-.servicio-content .servicio-content h2 {
-  font-size: 55px;
-  line-height: 70px;
-  color: yellow;
-  text-transform: uppercase;
-  margin-bottom: 50px;
 }
 .servicio-content .servicio-1 {
   padding: 0 100px;
@@ -425,6 +429,14 @@ h3 {
 .servicio-content .servicio-1 h3 {
   color: aliceblue;
   font-size: 18px;
+}
+
+.servicio-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: yellow;
+  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .cards {

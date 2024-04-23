@@ -10,8 +10,19 @@
 @media screen and (max-width: 760px){
     .grid .contenido-principal{
         grid-column: 1/-1;
+        width: 270px;
     }
     .sidebar{
         grid-column: 1/-1;
+        width: 276px;
+    }
+    .medida{
+        width: 220px;
+    }
+}
+@media(max-width:850px){
+    .grid{
+        flex-direction: column;
+        justify-content: center;
     }
 }
