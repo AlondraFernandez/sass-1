@@ -1,18 +1,19 @@
-.footer-1{
-    background-color: black;
-}
-.copyright{
-    color: gray;
-}
-footer h3{
-    color: gray;
-}
-footer a{
-    color: rgb(255, 247, 5);
-    list-style: none;
-    text-decoration: none;
-}
-footer img{
-    height: 40px;
-    width: 40px;
+.container-1{
+    background-color: $secondary-color;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        img{
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+        }
 }

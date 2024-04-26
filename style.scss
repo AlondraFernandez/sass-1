@@ -11,46 +11,51 @@
 body {
     font-family: 'Poppins' , sans-serif;
 }
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+
+.header{
+    background-image: url(./assets/img/black\ &\ yello\ wallpaper.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    .menu label{
-        cursor: pointer;
-        display: none;
+    min-height: 70vh;
+    padding: 80px 0 0 0;
+    .header-content{
+        display: flex;
     }
 }
-.menu-container1{
-    display: flex;
-    max-width: 1200px;
-    margin-right: 0px;
+.header-txt{
+    width: 50%;
 }
-.navbar{
-    font-size: 18px;
+.header-txt h1{
+    font-size: 60px;
+    line-height: 85px;
+    color: rgb(255, 0, 0);
+}
+.header-txt span{
+    font-size: 70px;
+    color: $secondary-color;
+}
+.header-img img{
+    width: 600px;
+    height: 500px;
+    padding: 50px 20px 0 200px ;
+    background: opacity($color: #000000);
+}
+.header-img{
+    width: 50%;
+    text-align: center;
+}
+.parrafo{
+    color: white;
     padding: 20px;
-    background-color: yellow;
-    display: block;
-    font-weight: 600;
-    .navbar-brand{
-        text-align: left;
-    }
-}
-#menu{
-    display: none;
-}
-
-.header-content p{
-    font-size: 16px;
-    color: yellow;
-    padding: 0 25px;
-    margin-bottom: 25px;
 }
 .btn-1{
     display: inline-block;
+    border: 3px solid;
+    border-radius: 15px;
+    margin-left: 20px;
     padding: 11px 35px;
     background-color: $secondary-color;
     color: black;
@@ -59,40 +64,22 @@ body {
 .btn-1:hover{
     color: red;
 }
-.pizza{
-    padding: 100px 0;
-    background-color: aliceblue;
-    position: relative;
-    .pizza-content{
-        text-align: center;
-    }
+.menu-pl{
+    padding: 0 0 100px 0;
 }
-.pizza-group{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.h2{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 40px;
 }
-.pizza-content h2{
-    font-size: 55px;
-    color:black;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
+span{
+    color: red
 }
-.pizza-1 img{
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    .pizza-img{
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 30px;
-    }
+
+.negro{
+    background-color: #000000;
 }
-.img-header{
-    background-color: rgb(222, 220, 222);
-}
+
 h3{
     color:black;
     font-size: 20px;
@@ -102,7 +89,7 @@ h3{
     background-image: linear-gradient(
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)),
-        url(/assets/img/fondo-header.jpg);
+        url(./assets/img/fondo-header.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
