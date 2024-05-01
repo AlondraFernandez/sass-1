@@ -34,7 +34,7 @@ h2{
     font-size: 2,9em;
     text-transform: uppercase;
 }
-.grid{
+.grid-sobre{
     background-color: yellow;
     width: 90%;
     max-width: 1000px;
@@ -76,6 +76,7 @@ h2{
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+    padding: 10px;
 }
 .related-post:hover{
     cursor: pointer;

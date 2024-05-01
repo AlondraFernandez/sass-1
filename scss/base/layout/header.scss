@@ -1,13 +1,6 @@
 body {
     font-family: 'Poppins' , sans-serif;
 }
-
-.menu-container1{
-    display: flex;
-    max-width: 1200px;
-    margin-right: 0px;
-}
-
 .menu{
     position: absolute;
     top: 0;
@@ -16,6 +9,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .menu-container1{
+        display: flex;
+        max-width: 1200px;
+        margin-right: 0px;
+    }
+    .menu label{
+        cursor: pointer;
+        display: none;
+    }
 }
 .navbar{
     font-size: 18px;
@@ -23,18 +25,11 @@ body {
     background-color: yellow;
     display: block;
     font-weight: 600;
-}
-.navbar-brand{
-    text-align: left;
+    .navbar-brand{
+        text-align: left;
+    }
 }
 #menu{
-    display: none;
-}
-.menu-icono{
-    width: 25px;
-}
-.menu label{
-    cursor: pointer;
     display: none;
 }
 .header-content p{

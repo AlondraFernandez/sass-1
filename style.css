@@ -9,12 +9,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.menu-container1 {
-  display: flex;
-  max-width: 1200px;
-  margin-right: 0px;
-}
-
 .menu {
   position: absolute;
   top: 0;
@@ -24,6 +18,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.menu .menu-container1 {
+  display: flex;
+  max-width: 1200px;
+  margin-right: 0px;
+}
+.menu .menu label {
+  cursor: pointer;
+  display: none;
+}
 
 .navbar {
   font-size: 18px;
@@ -32,21 +35,11 @@ body {
   display: block;
   font-weight: 600;
 }
-
-.navbar-brand {
+.navbar .navbar-brand {
   text-align: left;
 }
 
 #menu {
-  display: none;
-}
-
-.menu-icono {
-  width: 25px;
-}
-
-.menu label {
-  cursor: pointer;
   display: none;
 }
 
@@ -86,17 +79,24 @@ body {
 }
 
 .card {
-  width: 100%;
-  height: 200px;
+  width: 300px;
+  height: auto;
   display: inline-flex;
   background: black;
   border-radius: 8px;
   box-shadow: 0 20px 20px rgba(255, 2, 2, 0.1);
   overflow: hidden;
 }
-.card img {
-  width: 200px;
+
+.card-image {
+  width: 100%;
   height: auto;
+  border-bottom: 1px solid #fc6900;
+}
+
+.card img {
+  width: 300px;
+  height: 220px;
   justify-content: center;
 }
 
@@ -114,6 +114,50 @@ body {
 .card-text {
   font-size: 16px;
   color: #666;
+}
+
+.container-boton {
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.boton {
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(246, 246, 246, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(248, 207, 4, 0);
+  }
+}
+.precio-item {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: yellow;
+}
+
+.boton-item {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background-color: yellow;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: yellow;
 }
 
 .cards {
@@ -159,7 +203,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.grid {
+.grid-sobre {
   background-color: yellow;
   width: 90%;
   max-width: 1000px;
@@ -207,6 +251,7 @@ h2 {
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
+  padding: 10px;
 }
 
 .related-post:hover {
@@ -310,13 +355,14 @@ h2 {
   }
 }
 @media screen and (max-width: 760px) {
-  .grid .contenido-principal {
+  .grid-sobre .contenido-principal {
     grid-column: 1/-1;
     width: 270px;
   }
   .sidebar {
     grid-column: 1/-1;
-    width: 200px;
+    width: 100%;
+    flex-direction: column;
   }
   .medida {
     width: 150px;
@@ -324,7 +370,7 @@ h2 {
   }
 }
 @media (max-width: 850px) {
-  .grid {
+  .grid-sobre {
     flex-direction: column;
     justify-content: center;
   }
@@ -376,7 +422,7 @@ body {
 }
 
 .header-txt span {
-  font-size: 70px;
+  font-size: 65px;
   color: yellow;
 }
 

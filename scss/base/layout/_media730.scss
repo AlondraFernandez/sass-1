@@ -8,13 +8,14 @@
     }
 }
 @media screen and (max-width: 760px){
-    .grid .contenido-principal{
+    .grid-sobre .contenido-principal{
         grid-column: 1/-1;
         width: 270px;
     }
     .sidebar{
         grid-column: 1/-1;
-        width: 200px;
+        width: 100%;
+        flex-direction: column;
     }
     .medida{
         width: 150px;
@@ -22,7 +23,7 @@
     }
 }
 @media(max-width:850px){
-    .grid{
+    .grid-sobre{
         flex-direction: column;
         justify-content: center;
     }

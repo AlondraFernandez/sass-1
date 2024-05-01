@@ -1,16 +1,21 @@
-.card{
-    width: 100%;
-    height: 200px;
-    display:inline-flex;
+.card {
+    width: 300px;
+    height: auto;
+    display: inline-flex;
     background: black;
     border-radius: 8px;
     box-shadow: 0 20px 20px rgba(255, 2, 2, 0.1);
     overflow: hidden;
-    img{
-        width: 200px;
-        height: auto;
-        justify-content: center;
-    }
+}
+.card-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #fc6900;
+}
+.card img{
+    width: 300px;
+    height: 220px;
+    justify-content: center;
 }
 
 .card-content {
@@ -27,4 +32,45 @@
 .card-text {
     font-size: 16px;
     color: #666;
+}
+
+.container-boton {
+        position: fixed;
+        z-index: 999;
+        bottom: 20px;
+        right: 20px;
+        transition: ease 0.3s;
+        animation: efecto 1.2s infinite;
+}
+.boton {
+    transition: ease 1s;
+    }
+
+@keyframes efecto {
+    0% {
+        box-shadow: 0 0 0 0 rgba(246, 246, 246, 0.85);
+        }
+        100% {
+        box-shadow: 0 0 0 25px rgba(248, 207, 4, 0);
+        }
+}
+.precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: $secondary-color;
+}
+.boton-item{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: $secondary-color;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fa-solid{
+    color: $secondary-color;
 }
